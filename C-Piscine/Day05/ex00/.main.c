@@ -1,0 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ymatsumu <ymatsumu@student.42tokyo.>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/01/26 20:45:20 by ymatsumu          #+#    #+#             */
+/*   Updated: 2021/01/28 10:42:54 by ymatsumu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
+
+int	ft_strcmp(char *s1, char *s2);
+
+int main(void)
+{
+	char str1[] = "abcde";
+	char str2[] = "abcdefg"; 
+	char str3[] = "abcde";
+	char str4[] = "abcdefg";
+
+	printf("%d\n", strcmp(str1, str2));
+	printf("%d\n", ft_strcmp(str3, str4));
+	return 0;
+}
+
